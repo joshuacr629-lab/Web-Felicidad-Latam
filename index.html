@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¿Qué tan felices somos los colombianos... y por qué importa saberlo?</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body{
+            margin:0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            color:white;
+        }
+
+        header{
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        h1{
+            margin-bottom:10px;
+        }
+
+        p{
+            max-width:800px;
+            margin:auto;
+            opacity:0.9;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:20px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            padding:25px;
+            border-radius:15px;
+            backdrop-filter: blur(4px);
+            box-shadow:0 0 20px rgba(0,0,0,0.4);
+            margin-bottom:30px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.main-graph {
+    display: block;
+    margin: 20px auto;
+}
+/* ===== SECCIÓN DE ANÁLISIS DETALLADO ===== */
+
+.analysis-section {
+    padding: 80px 10%;
+}
+
+.analysis-block {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.analysis-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.analysis-text {
+    flex: 1;
+}
+
+.analysis-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.analysis-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    max-width: 600px;
+}
+
+.analysis-image {
+    flex: 1;
+}
+
+.analysis-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.analysis-image img:hover {
+    transform: scale(1.04);
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+<h1 class="titulo-bandera">
+¿Qué tan felices somos los colombianos... y por qué importa saberlo?
+</h1>
+    <p>
+        La felicidad no es solo una sensación, también se puede estudiar. El World Happiness Report reúne datos de distintos países para entender qué factores influyen realmente en el bienestar de las personas.
+
+    </p>
+</header>
+
+<div class="container">
+<div class="card fade-in info-happiness">
+
+<div class="texto-happiness">
+<h2>¿Qué es el World Happiness Report?</h2>
+
+<p>
+El World Happiness Report es un informe anual que clasifica a los países
+según la percepción de bienestar de sus ciudadanos. La medición se basa
+en la encuesta de la “Escalera de Cantril”, donde las personas evalúan
+su vida en una escala de 0 (peor vida posible) a 10 (mejor vida posible).
+</p>
+
+<p>
+La puntuación final se explica a partir de seis variables principales:
+PIB per cápita, apoyo social, esperanza de vida saludable,
+libertad para tomar decisiones, generosidad y percepción de corrupción.
+</p>
+
+</div>
+
+<div class="imagen-happiness">
+<img src="Imagenes\WER.png" alt="World Happiness Report">
+</div>
+
+</div>
+</div>
+
+<div class="card fade-in evolucion-colombia">
+    <h2>¿Por qué Colombia fue más feliz hace una década que hoy? (2011–2024)</h2>
+    <img src="Imagenes\colombia_evolucion.png" 
+     alt="Evolución felicidad Colombia"
+     class="main-graph">
+    <p>
+        La gráfica muestra una tendencia creciente hasta 2015,
+        seguida de una disminución progresiva entre 2016 y 2022,
+        con una recuperación reciente en 2023–2024.
+        El periodo sombreado refleja el impacto de la pandemia,
+        donde se observa una caída significativa en la evaluación de vida.
+    </p>
+</div>
+
+<div class="analysis-section fade-in">
+
+  <!-- AUMENTO -->
+  <div class="analysis-block">
+    <div class="analysis-text">
+      <h2>¿Qué nos hizo tan optimistas entre 2011 y 2015?</h2>
+      <p>
+        Entre 2011 y 2015 se observa un crecimiento sostenido en la evaluación de vida,
+        alcanzando su punto más alto alrededor de 2014–2015.
+      </p>
+      <p>
+        Este periodo se relaciona con estabilidad económica, optimismo social y el avance
+        del proceso de paz. La participación en el Mundial 2014 fortaleció el orgullo nacional
+        y la cohesión social, influyendo positivamente en la percepción de bienestar.
+      </p>
+    </div>
+    <div class="analysis-image">
+      <img src="Imagenes\James.png" alt="Crecimiento 2011-2015">
+    </div>
+  </div>
+
+  <!-- DESCENSO -->
+  <div class="analysis-block reverse">
+    <div class="analysis-text">
+      <h2>¿Qué nos robó la alegría entre 2016 y 2019?</h2>
+      <p>
+        Desde 2016 comienza una disminución progresiva asociada a polarización política
+        tras el plebiscito del acuerdo de paz.
+      </p>
+      <p>
+        La desaceleración económica tras la caída del petróleo y las protestas sociales
+        reflejaron mayor inconformidad y afectaron la confianza institucional.
+      </p>
+    </div>
+    <div class="analysis-image">
+      <img src="Imagenes\Santos .png" alt="Descenso 2016-2019">
+    </div>
+  </div>
+
+  <!-- CAÍDA FUERTE -->
+  <div class="analysis-block">
+    <div class="analysis-text">
+      <h2>¿Cuánto nos golpeó la pandemia… y cómo lo sabemos?</h2>
+      <p>
+        La pandemia impactó fuertemente el empleo, la economía y la salud mental,
+        llevando el indicador a su punto más bajo.
+      </p>
+      <p>
+        El Paro Nacional de 2021 evidenció tensiones sociales profundas.
+        En 2022 se produjo un cambio político histórico que generó esperanza
+        en algunos sectores y mayor polarización en otros.
+      </p>
+    </div>
+    <div class="analysis-image">
+      <img src="Imagenes\pandemia.png" alt="Impacto pandemia">
+    </div>
+  </div>
+
+  <!-- RECUPERACIÓN -->
+  <div class="analysis-block reverse">
+    <div class="analysis-text">
+      <h2>¿Estamos recuperando la esperanza o solo respirando?</h2>
+      <p>
+        La reactivación económica posterior a la pandemia impulsó una mejora moderada
+        en la evaluación de vida.
+      </p>
+      <p>
+        Eventos deportivos recientes fortalecieron el orgullo nacional y el ánimo social.
+        Sin embargo, el país aún no alcanza los niveles máximos observados antes de 2016.
+      </p>
+    </div>
+    <div class="analysis-image">
+      <img src="Imagenes\crecimiento.png" alt="Recuperación 2023-2024">
+    </div>
+  </div>
+
+</div>
+
+<div class="comparacion-felicidad fade-in">
+
+<div class="grafico-felicidad">
+    
+    <h2 class="titulo-grafico">Tres países, tres niveles de felicidad</h2>
+    
+    <img src="Imagenes/componentes_2024.png" 
+    alt="Componentes felicidad comparados"
+    class="main-graph">
+
+</div>
+<!-- COSTA RICA -->
+<div class="comparacion-bloque">
+
+<div class="comparacion-texto">
+<h3>Costa Rica</h3>
+<p>
+Costa Rica destaca por su alto nivel de apoyo social, estabilidad institucional y fuerte sentido de comunidad. Factores como la percepción de libertad, la confianza en las instituciones y una cultura centrada en el bienestar colectivo influyen significativamente en su alta evaluación de vida. Aunque no es la economía más grande de la región, su modelo social y su cohesión comunitaria elevan su puntaje de felicidad.
+</p>
+</div>
+
+<div class="comparacion-imagen">
+<img src="Imagenes\WhatsApp Image 2026-03-13 at 6.55.23 PM.jpeg">
+</div>
+
+</div>
+
+
+<!-- COLOMBIA -->
+<div class="comparacion-bloque reverse">
+
+<div class="comparacion-texto">
+<h3>Colombia</h3>
+<p>
+Colombia, por su parte, mantiene un nivel de felicidad superior al de Venezuela, pero inferior al de Costa Rica. Su posición refleja una combinación de resiliencia social y optimismo cultural, junto con desafíos persistentes como desigualdad, percepción de corrupción e incertidumbre política. Aunque en 2024 se observa una ligera recuperación tras los efectos de la pandemia, el país aún enfrenta obstáculos estructurales que limitan un crecimiento más significativo en su puntaje.
+</p>
+</div>
+
+<div class="comparacion-imagen">
+<img src="Imagenes\col.jpeg">
+</div>
+
+</div>
+
+
+<!-- VENEZUELA -->
+<div class="comparacion-bloque">
+
+<div class="comparacion-texto">
+<h3>Venezuela</h3>
+<p>
+En contraste, Venezuela enfrenta una situación prolongada de crisis económica, alta inflación y deterioro de servicios básicos, lo que impacta directamente en la calidad de vida de su población. A esto se suma una baja percepción de libertad y confianza institucional, factores que influyen negativamente en la evaluación general de vida y explican su posición como el país menos feliz de la región.
+</p>
+</div>
+
+<div class="comparacion-imagen">
+<img src="Imagenes\WhatsApp Image 2026-03-13 at 6.55.50 PM.jpeg">
+</div>
+
+</div>
+
+</div>
+
+<div class="card fade-in">
+
+<h2>Análisis Comparativo Interactivo por País (2012–2024)</h2>
+
+<div class="comparison-wrapper">
+
+    <!-- SECCIÓN IZQUIERDA (PAÍSES) -->
+    <div class="countries-section">
+
+        <!-- COLOMBIA -->
+        <div class="country">
+
+            <div class="country-left">
+                <img src="Imagenes\colombia.png" class="flag">
+                <div>
+                    <h3>Colombia</h3>
+                    <p><strong>Puntaje 2024:</strong> 6.0</p>
+                </div>
+            </div>
+
+            <div class="mini-chart" id="chart-colombia"></div>
+
+        </div>
+
+        <!-- COSTA RICA -->
+        <div class="country">
+
+            <div class="country-left">
+                <img src="Imagenes\costarica.png" class="flag">
+                <div>
+                    <h3>Costa Rica</h3>
+                    <p><strong>Puntaje 2024:</strong> 7.27</p>
+                </div>
+            </div>
+
+            <div class="mini-chart" id="chart-costarica"></div>
+
+        </div>
+
+        <!-- VENEZUELA -->
+        <div class="country">
+
+            <div class="country-left">
+                <img src="Imagenes\Venezuela.png" class="flag">
+                <div>
+                    <h3>Venezuela</h3>
+                    <p><strong>Puntaje 2024:</strong> 5.68</p>
+                </div>
+            </div>
+
+            <div class="mini-chart" id="chart-venezuela"></div>
+
+        </div>
+
+    </div>
+
+    <!-- PANEL DERECHO DINÁMICO -->
+    <div class="info-panel" id="info-panel">
+        <h3>Selecciona una barra</h3>
+        <p>Haz clic en cualquier barra para ver información detallada del año correspondiente.</p>
+    </div>
+
+</div>
+
+</div>
+<script>
+
+const maxScale = 8;
+
+const data = {
+    colombia: [
+        {year: 2012, value: 6.42},
+        {year: 2014, value: 6.48},
+        {year: 2016, value: 6.36},
+        {year: 2018, value: 6.12},
+        {year: 2020, value: 6.01},
+        {year: 2022, value: 5.63},
+        {year: 2024, value: 6.0}
+    ],
+    costarica: [
+        {year: 2012, value: 7.26},
+        {year: 2014, value: 7.23},
+        {year: 2016, value: 7.08},
+        {year: 2018, value: 7.17},
+        {year: 2020, value: 7.07},
+        {year: 2022, value: 6.61},
+        {year: 2024, value: 7.27}
+    ],
+    venezuela: [
+        {year: 2012, value: 7.04},
+        {year: 2014, value: 6.81},
+        {year: 2016, value: 5.25},
+        {year: 2018, value: 4.71},
+        {year: 2020, value: 4.89},
+        {year: 2022, value: 5.21},
+        {year: 2024, value: 5.68}
+    ]
+};
+
+function createChart(country, containerId) {
+    const container = document.getElementById(containerId);
+
+    data[country].forEach(item => {
+        const bar = document.createElement("div");
+        bar.classList.add("bar");
+
+        const heightPercent = (item.value / maxScale) * 100;
+
+        bar.style.height = "0%";
+        bar.setAttribute("data-year", item.year);
+        bar.setAttribute("data-value", item.value);
+
+        container.appendChild(bar);
+
+        setTimeout(() => {
+            bar.style.height = heightPercent + "%";
+        }, 100);
+
+bar.addEventListener("click", () => {
+
+    // Si ya estaba seleccionada → deselecciona y reanuda autoplay
+    if (selectedBar === bar) {
+        selectedBar.classList.remove("active-bar");
+        selectedBar = null;
+        autoRunning = true;
+        startAutoPlay();
+        return;
+    }
+
+    // Si selecciona una nueva → pausa autoplay
+    autoRunning = false;
+    clearTimeout(currentTimeout);
+
+    document.querySelectorAll(".bar").forEach(b => {
+        b.classList.remove("active-bar");
+    });
+
+    bar.classList.add("active-bar");
+    selectedBar = bar;
+
+    showInfo(country, item.year, item.value);
+});
+    });
+}
+
+/* PANEL DINÁMICO COMPLETO 2012–2024 */
+function showInfo(country, year, value) {
+    document.body.classList.remove("colombia-bg", "costarica-bg", "venezuela-bg");
+    document.body.classList.add(country + "-bg");
+
+    const panel = document.getElementById("info-panel");
+
+    const infoData = {
+
+        colombia: {
+            2012: "Mantiene una evaluación de vida sólida, respaldada por crecimiento económico sostenido; reducción gradual de pobreza; estabilidad institucional; expectativas sociales favorables.",
+            2014: "Registra un ligero aumento, apoyado en buen desempeño económico y estabilidad laboral; exportaciones aún dinámicas; confianza del consumidor relativamente alta; percepción de bienestar en ascenso.",
+            2016: "Inicia un descenso moderado debido a desaceleración económica y menores ingresos externos; ajustes fiscales generan preocupación; disminuye el dinamismo productivo; crece la cautela en expectativas sociales.",
+            2018: "Continúa la caída leve influida por incertidumbre política y menor ritmo de crecimiento; aumenta la percepción de inseguridad; tensiones sociales emergen; la confianza económica se modera.",
+            2020: "Se produce una caída marcada por el impacto de la pandemia; contracción económica significativa; aumento del desempleo; restricciones afectan el bienestar general.",
+            2022: "Se alcanza uno de los puntos más bajos debido a efectos acumulados de la crisis sanitaria y tensiones sociales; inflación elevada; recuperación económica aún incompleta; percepción social debilitada.",
+            2024: "Se evidencia una recuperación progresiva impulsada por reactivación económica y normalización del empleo; mejora en consumo y actividad productiva; mayor estabilidad tras la pandemia; aunque persisten desafíos como inflación e incertidumbre política."
+        },
+
+        costarica: {
+            2012: "La histórica inversión de Costa Rica en educación y salud, tras la abolición del ejército, fortaleció su estabilidad social y el acceso a servicios básicos. Este modelo permitió construir instituciones sólidas y un sistema de bienestar más equitativo en comparación con otros países de la región. La garantía de acceso a salud pública y educación de calidad generó mayor seguridad a largo plazo en la población. Esa base estructural influyó positivamente en la percepción de bienestar y en la evaluación de vida medida por el World Happiness Report.",
+            2014: "La consolidación de un cambio político democrático con la elección de Luis Guillermo Solís fortaleció la confianza institucional en Costa Rica. El proceso electoral fue pacífico y con alta participación ciudadana, reforzando la legitimidad democrática. Este tipo de transiciones ordenadas transmite estabilidad política y respeto por las instituciones. La sensación de continuidad y solidez democrática influyó en la percepción de seguridad y bienestar colectivo.",
+            2016: "La estabilidad y continuidad institucional de Costa Rica en medio de un contexto regional incierto fortalecieron la percepción de seguridad y confianza. Mientras otros países latinoamericanos enfrentaban crisis económicas y tensiones políticas, Costa Rica mantuvo normalidad en sus instituciones y servicios públicos. Esa sensación de orden y previsibilidad generó tranquilidad social. La estabilidad estructural impactó positivamente la evaluación de vida reportada por la población.",
+            2018: "El desarrollo pacífico del proceso electoral y la elección de Carlos Alvarado Quesada reforzaron la confianza democrática en Costa Rica. A pesar de debates sociales intensos durante la campaña, el respeto por los resultados consolidó la institucionalidad. Este tipo de madurez política fortalece la percepción de libertad y participación ciudadana. La confianza en el sistema democrático contribuye directamente al bienestar subjetivo de la población.",
+            2020: "La respuesta institucional y sanitaria de Costa Rica frente a la pandemia permitió mantener cierta confianza social en medio de la crisis. Aunque el impacto económico fue significativo, el sistema de salud pública respondió de manera organizada. La comunicación institucional y las medidas preventivas generaron sensación de control ante la incertidumbre global. Esa percepción de capacidad estatal ayudó a sostener la evaluación de vida en un contexto difícil.",
+            2022: "La transición democrática y el proceso electoral que llevó a la elección de Rodrigo Chaves Robles reforzaron la continuidad institucional en Costa Rica. A pesar de tensiones políticas y debates económicos, el respeto por el resultado electoral confirmó la estabilidad del sistema democrático. Este tipo de cambios dentro de la institucionalidad transmite previsibilidad y orden. La continuidad democrática fortalece la confianza ciudadana y la percepción de estabilidad.",
+            2024: "La recuperación del turismo y la estabilidad democrática fortalecieron la percepción de optimismo en Costa Rica. El turismo, uno de los principales motores económicos del país, mostró señales de recuperación tras la pandemia, mejorando el empleo y la actividad económica. La continuidad institucional y la ausencia de crisis políticas profundas generaron sensación de normalidad. Este contexto favoreció una evaluación de vida más positiva en el World Happiness Report."
+        },
+
+        venezuela: {
+            2012: "Presenta una evaluación de vida alta, impulsada por ingresos petroleros aún fuertes y una economía que, aunque con desequilibrios, mantenía estabilidad relativa; el consumo y los servicios funcionaban con normalidad comparativa; existía percepción de bienestar en buena parte de la población; las expectativas sociales eran todavía positivas.",
+            2014: "Comienza un descenso moderado debido a la caída de los precios del petróleo y al inicio de un deterioro económico más visible; la inflación aumenta progresivamente; crece la incertidumbre financiera; la percepción de estabilidad empieza a debilitarse.",
+            2016: "Se registra una caída pronunciada asociada al colapso de ingresos externos y al agravamiento de la crisis macroeconómica; la escasez de bienes básicos se intensifica; la inflación alcanza niveles críticos; la calidad de vida disminuye notablemente.",
+            2018: "Continúa el descenso hasta uno de los puntos más bajos, marcado por hiperinflación y contracción profunda del PIB; los servicios públicos muestran fuerte deterioro; aumenta la migración; el poder adquisitivo se reduce drásticamente.",
+            2020: "La tendencia se estabiliza en niveles bajos, influida por la pandemia y restricciones globales; la economía sigue debilitada; la dolarización parcial ofrece cierto alivio; la percepción social permanece frágil.",
+            2022: "Se observa una leve recuperación impulsada por cierta estabilización económica; la inflación desacelera en comparación con años anteriores; algunas actividades productivas repuntan; mejora ligeramente la percepción de vida.",
+            2024: "La evaluación de vida aumenta de forma moderada gracias a mayor estabilidad relativa y reactivación parcial; la inflación muestra menor intensidad que en el pasado; se percibe algo más de dinamismo económico; sin embargo, persisten problemas estructurales que limitan un avance mayor."
+        }
+    };
+
+    let text = "No hay información registrada para este año.";
+
+    if (
+        infoData[country] &&
+        infoData[country][year] &&
+        infoData[country][year].trim() !== ""
+    ) {
+        text = infoData[country][year];
+    }
+
+    panel.innerHTML = `
+        <h3>${country.toUpperCase()} - ${year}</h3>
+        <p><strong>Puntaje:</strong> ${value}</p>
+        <p>${text}</p>
+    `;
+}
+
+createChart("colombia", "chart-colombia");
+createChart("costarica", "chart-costarica");
+createChart("venezuela", "chart-venezuela");
+
+let autoRunning = true;
+let currentTimeout = null;
+let selectedBar = null;
+
+function startAutoPlay() {
+
+    const countries = [
+        { name: "colombia", id: "chart-colombia" },
+        { name: "costarica", id: "chart-costarica" },
+        { name: "venezuela", id: "chart-venezuela" }
+    ];
+
+    let countryIndex = 0;
+    let barIndex = 0;
+
+    function playNext() {
+
+        if (!autoRunning) return;
+
+        const currentCountry = countries[countryIndex];
+        const bars = document.querySelectorAll(`#${currentCountry.id} .bar`);
+
+        // Limpiar todas las barras
+        document.querySelectorAll(".bar").forEach(b => {
+            if (b !== selectedBar) {
+                b.classList.remove("active-bar");
+            }
+        });
+
+        const bar = bars[barIndex];
+
+        if (!selectedBar && bar) {
+
+            bar.classList.add("active-bar");
+
+            const year = bar.getAttribute("data-year");
+            const value = bar.getAttribute("data-value");
+
+            showInfo(currentCountry.name, year, value);
+        }
+
+        barIndex++;
+
+        // Si terminó el país actual
+        if (barIndex >= bars.length) {
+            barIndex = 0;
+            countryIndex++;
+
+            // Si terminó todos los países, vuelve al primero
+            if (countryIndex >= countries.length) {
+                countryIndex = 0;
+            }
+        }
+
+        currentTimeout = setTimeout(playNext, 5000);
+    }
+
+    playNext();
+}
+
+setTimeout(() => {
+    startAutoPlay();
+}, 1500);
+
+const faders = document.querySelectorAll(".fade-in");
+
+const appearOptions = {
+    threshold: 0.2
+};
+
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+    });
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
+
+
+</script>
+<footer class="footer-autores">
+
+<h2>Autores del Proyecto</h2>
+
+<div class="autores-container">
+
+<div class="autor">
+<h3>Luis Mario Pérez Díaz</h3>
+<p><strong>Correo:</strong>lpdiaz@utb.edu.co</p>
+</div>
+
+<div class="autor">
+<h3>Joshua David Reyes Leones</h3>
+<p><strong>Correo:</strong> joshreyes@utb.edu.co</p>
+</div>
+
+<div class="autor">
+<h3>Mauricio Andres Fernandez Espinosa</h3>
+<p><strong>Correo:</strong> maufernandez@utb.edu.co</p>
+</div>
+
+<div class="autor">
+<h3>Jerry Daniel Buelvas Mejía</h3>
+<p><strong>Correo:</strong> jebuelvas@utb.edu.co</p>
+</div>
+<div class="autor">
+<h3>Maria Del Mar Restrepo Licona</h3>
+<p><strong>Correo:</strong> liconam@utb.edu.co</p>
+</div>
+<div class="autor">
+<h3>Santiago Andres Cardona Rendon</h3>
+<p><strong>Correo:</strong>Cardonas@utb.edu.co</p>
+</div>
+</div>
+
+
+</footer>
+</body>
+</html>

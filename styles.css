@@ -1,0 +1,465 @@
+/* ===== ANIMACIÓN SCROLL ===== */
+
+.fade-in{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-graph{
+    width: 70%;
+    max-width: 700px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+.main-graph-large{
+    width: 85%;
+    max-width: 900px;
+}
+
+.main-graph:hover{
+    transform: scale(1.02);
+}
+
+
+
+.country {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 80px; 
+    margin-bottom: 70px;
+}
+
+.country-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    min-width: 420px;
+}
+
+.flag {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* ===== GRÁFICO ===== */
+
+.mini-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    height: 180px;
+    flex: 2; 
+}
+
+
+
+.bar {
+    width: 30px;
+    background: linear-gradient(180deg, #00e0ff, #0072ff);
+    border-radius: 8px 8px 0 0;
+    transition: height 1s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Tooltip */
+
+.bar::after {
+    content: attr(data-year) "  |  " attr(data-value);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(255,255,255,0.95);
+    color: #111;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.bar:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.comparison-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.countries-section {
+    flex: 2;
+}
+
+.info-panel {
+    flex: 1;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    min-height: 280px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.info-panel:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.active-bar {
+    outline: 3px solid white;
+    transform: translateY(-6px) scale(1.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.info-panel {
+    text-align: center;
+}
+
+
+body {
+    transition: background 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: -1;
+}
+
+
+body.colombia-bg {
+    background-image: url("https://images.unsplash.com/photo-1532443603613-61fa154742cd?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+
+body.costarica-bg {
+    background-image: url("https://images.unsplash.com/photo-1611602316663-92dc58e199ed?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+
+body.venezuela-bg {
+    background-image: url("https://plus.unsplash.com/premium_photo-1733317242907-7428987b8bde?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.main-graph-large{
+width:800px;
+height:300px;
+}
+
+.comparacion-felicidad p{
+font-size:18px;
+}
+
+.comparacion-felicidad{
+max-width:1200px;
+margin:80px auto;
+padding:40px 0;
+
+background:transparent;
+box-shadow:none;
+border-radius:0;
+}
+.comparacion-felicidad p{
+font-size:17px;
+line-height:1.7;
+margin-bottom:16px;
+text-align:justify;
+color:#ffffff;
+}
+
+.comparacion-felicidad img{
+width:100%;
+max-width:700px;
+display:block;
+margin:20px auto;
+border-radius:8px;
+}
+
+.evolucion-colombia{
+max-width:900px;
+margin:60px auto;
+padding:30px 40px;
+background:rgba(255,255,255,0.9);
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+.evolucion-colombia p{
+font-size:17px;
+line-height:1.7;
+margin-bottom:16px;
+text-align:justify;
+color:#ffffff;
+}
+.evolucion-colombia img{
+width:100%;
+max-width:700px;
+display:block;
+margin:20px auto;
+border-radius:8px;
+}
+
+.titulo-bandera{
+font-size:52px;
+font-weight:900;
+text-align:center;
+margin-bottom:25px;
+
+background:linear-gradient(
+90deg,
+#FCD116 0%,
+#FCD116 50%,
+#003893 50%,
+#003893 65%,
+#CE1126 65%,
+#CE1126 100%
+);
+
+background-size:250% 250%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:banderaFlotando 7s ease-in-out infinite;
+
+text-shadow:0px 4px 12px rgba(0,0,0,0.25);
+}
+
+@keyframes banderaFlotando{
+
+0%{ background-position:20% 50%; }
+
+25%{ background-position:40% 60%; }
+
+50%{ background-position:60% 40%; }
+
+75%{ background-position:40% 55%; }
+
+100%{ background-position:20% 50%; }
+
+}
+
+.info-happiness{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+.texto-happiness{
+flex:1;
+}
+
+.imagen-happiness{
+flex:1;
+text-align:right;
+}
+
+.imagen-happiness img{
+max-width:350px;
+height:auto;
+border-radius:10px;
+}
+
+.texto-happiness{
+font-size:17px;
+line-height:1.7;
+color:#ffffff;
+max-width:600px;
+}
+
+.footer-autores{
+margin-top:80px;
+padding:40px 20px;
+
+text-align:center;
+
+background:rgba(0,0,0,0.65);
+color:white;
+
+backdrop-filter:blur(10px);
+}
+
+.footer-autores h2{
+margin-bottom:30px;
+font-size:24px;
+}
+
+.autores-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.autor{
+background:rgba(255,255,255,0.1);
+padding:12px;
+border-radius:10px;
+
+width:170px;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+.autor h3{
+margin-bottom:10px;
+font-size:18px;
+}
+
+.autor p{
+font-size:14px;
+margin:4px 0;
+}
+
+.footer-info{
+margin-top:30px;
+opacity:0.8;
+font-size:13px;
+}
+.autor h3{
+font-size:16px;
+}
+
+.autor p{
+font-size:13px;
+}
+.autor:hover{
+transform:translateY(-5px);
+transition:0.3s;
+}
+.comparacion-bloque{
+display:flex;
+align-items:center;
+gap:70px;
+margin:90px 0;
+flex-wrap:wrap;
+}
+
+.comparacion-bloque.reverse{
+flex-direction:row-reverse;
+}
+
+.comparacion-texto{
+flex:1;
+}
+
+.comparacion-imagen{
+flex:1;
+}
+
+.comparacion-imagen img{
+width:100%;
+max-width:480px;
+border-radius:18px;
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.comparacion-imagen img:hover{
+transform:scale(1.04);
+}
+.info-happiness{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+}
+.texto-happiness p{
+font-size:17px;
+line-height:1.7;
+text-align:justify;
+margin-bottom:12px;
+}
+.texto-happiness h2{
+font-size:28px;
+margin-bottom:12px;
+}
+.grafico-felicidad{
+display:flex;
+justify-content:center;
+align-items:center;
+
+background: rgba(255,255,255,0.04);
+backdrop-filter: blur(5px);
+
+padding:30px;
+
+border-radius:20px;
+
+max-width:900px;
+margin:40px auto;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+border:1px solid rgba(255,255,255,0.12);
+}
+.main-graph{
+max-width:100%;
+height:auto;
+border-radius:10px;
+}
+
+.grafico-felicidad{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+background: rgba(255,255,255,0.04);
+backdrop-filter: blur(5px);
+
+padding:30px;
+
+border-radius:20px;
+
+max-width:900px;
+margin:40px auto;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+border:1px solid rgba(255,255,255,0.12);
+}
+
+.titulo-grafico{
+text-align:center;
+font-size:26px;
+margin-bottom:20px;
+color:white;
+}
