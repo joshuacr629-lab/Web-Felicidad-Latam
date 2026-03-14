@@ -463,3 +463,14 @@ font-size:26px;
 margin-bottom:20px;
 color:white;
 }
+.link-proyecto{
+    display:inline-block;
+    margin-top:15px; /* espacio arriba */
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.link-proyecto:hover{
+    text-decoration:underline;
+}
