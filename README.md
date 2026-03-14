@@ -7,6 +7,6 @@ Este Proyecto es desarrollado por estudiante de la Universidad Tecnologica de Bo
 
 
 # Bibliografia
-Informacion Tomada de:
+Informacion Recuperada de:
 
 *World Happiness Report*: https://www.worldhappiness.report/
