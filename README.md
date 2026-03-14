@@ -1,1 +1,3 @@
-# Web-Felicidad-Latam
+# ¿Qué tan felices somos los colombianos... y por qué importa saberlo?
+El proyecto *¿Qué tan felices somos los colombianos... y por qué importa saberlo?* consiste en el desarrollo de una página web informativa enfocada en presentar contenido relacionado con el indice de Felicidad enfocado en 3 paises de latinoamerica, Costa Rica, Colombia y Venezuela.La informacion esta basada en el reporte 2025 de *World Happiness Report*.
+Este Proyecto es desarrollado por estudiante de la Universidad Tecnologica de Bolivar (UTB) con el fin de empezar a explorar como se crea una pagina web desde cero y como usar la informacion para sacar datos relevantes que tengan un impacto en la sociedad.En este proyecto nos enfocamos unicamente en colombia y los comparamos con el pais mas feliz de latinoamerica (Costa Rica) y el menos Feliz (Venezuela).
