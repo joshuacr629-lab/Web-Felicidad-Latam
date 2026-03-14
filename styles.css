@@ -474,3 +474,48 @@ color:white;
 .link-proyecto:hover{
     text-decoration:underline;
 }
+.analysis-text h2 {
+    text-align:justify;
+    margin-bottom: 20px;
+}
+
+.analysis-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+    text-align:justify;
+}
+.analysis-text{
+    max-width:600px;
+}
+
+.analysis-text h2{
+    text-align:justify;
+}
+
+.analysis-text p{
+    margin-left:0;
+    margin-right:0;
+    max-width:600px;
+    text-align:justify;
+}
+.analysis-block{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+.fuente-global{
+margin-top:30px;
+font-size:13px;
+opacity:0.8;
+text-align:center;
+}
+
+.fuente-global a{
+color:#00e0ff;
+text-decoration:none;
+}
+
+.fuente-global a:hover{
+text-decoration:underline;
+}
